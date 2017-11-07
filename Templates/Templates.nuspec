@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <projectUrl>http://cpmtfs:8080/tfs/ProductDevelopmentCollection/Templates</projectUrl>
+    <iconUrl>http://cpmtfs:8080//tfs/ProductDevelopmentCollection/_api/_common/identityImage?id=2a008b1e-2442-4d5c-a91e-5d0b00b3a386&amp;__v=1</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <copyright>Copyright 2015</copyright>
+    <tags>T4 Templates Helpers</tags>
+  </metadata>
+</package>

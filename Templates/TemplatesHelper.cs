@@ -34,10 +34,17 @@ namespace Templates
                     counter += " ";
                 for (int i = 0; i < (_value.Length + (10 - _value.Length % 10)); i++)
                 {
-                    if (i != 0 && (i + 1) % 10 == 0)
-                        counter += ((i + 1) / 10).ToString();
+                    string stamp = (i + 1).ToString();
+
+                    if ((i + 1) % 10 == 0)
+                    {
+                        counter += stamp;
+                        i += stamp.Length - 1;
+                    }
                     else
+                    {
                         counter += ".";
+                    }
                 }
             }
             else if (_value.Length > 5)
@@ -65,6 +72,16 @@ namespace Templates
             return "false";
         }
 
+        public static string FormatDate(DateTime value)
+        {
+            return new StringBuilder()
+                .Append("new DateTime(")
+                .Append(value.Year).Append(DefaultSeperator)
+                .Append(value.Month).Append(DefaultSeperator)
+                .Append(value.Day)
+                .Append(")").ToString();
+        }
+
         public static string FormatDateTime(DateTime value)
         {
             return new StringBuilder()
@@ -85,7 +102,7 @@ namespace Templates
             if (value == double.MinValue)
                 return "double.MinValue";
 
-            return value.ToString() + "d";
+            return value.ToString(".#####################################################################################################################################################################################################################################################################################################################################") + "d";
         }
 
         public static string FormatEnumeration(IEnumerationItem item)
