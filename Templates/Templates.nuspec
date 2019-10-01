@@ -1,15 +1,17 @@
 <?xml version="1.0"?>
 <package>
   <metadata>
-    <id>$id$</id>
-    <version>$version$</version>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
-    <projectUrl>http://cpmtfs:8080/tfs/ProductDevelopmentCollection/Templates</projectUrl>
-    <iconUrl>http://cpmtfs:8080//tfs/ProductDevelopmentCollection/_api/_common/identityImage?id=2a008b1e-2442-4d5c-a91e-5d0b00b3a386&amp;__v=1</iconUrl>
+    <id>Templates</id>
+    <version>2.1.0</version>
+    <authors>Billy Nieto</authors>
+    <projectUrl>https://github.com/billynieto/Templates</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
-    <copyright>Copyright 2015</copyright>
+    <description>Provides contructs that aid in T4 Templating.</description>
+    <copyright>Copyright 2019</copyright>
     <tags>T4 Templates Helpers</tags>
   </metadata>
+  <files>
+    <file src="bin/Release/Templates.dll" target="lib/Templates.dll" />
+    <file src="bin/Release/Templates.Framework.dll" target="lib/Templates.Framework.dll" />
+  </files>
 </package>
