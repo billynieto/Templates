@@ -1,17 +1,18 @@
 <?xml version="1.0"?>
 <package>
   <metadata>
-    <id>Templates</id>
+    <id>T5.Templates</id>
     <version>2.1.0</version>
     <authors>Billy Nieto</authors>
     <projectUrl>https://github.com/billynieto/Templates</projectUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>Provides contructs that aid in T4 Templating.</description>
     <copyright>Copyright 2019</copyright>
-    <tags>T4 Templates Helpers</tags>
+    <tags>T5 T4 Templates Helpers</tags>
   </metadata>
   <files>
-    <file src="bin/Release/Templates.dll" target="lib/Templates.dll" />
-    <file src="bin/Release/Templates.Framework.dll" target="lib/Templates.Framework.dll" />
+    <file src="bin/Debug/Templates.dll" target="lib/Templates.dll" />
+    <file src="bin/Debug/Templates.Framework.dll" target="lib/Templates.Framework.dll" />
   </files>
 </package>

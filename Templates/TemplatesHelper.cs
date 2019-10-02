@@ -335,7 +335,7 @@ namespace Templates
 
         public static IEnumerationItem RandomEnumerationItem(IEnumeration enumeration)
         {
-            int randomIndex = TemplatesHelper.Random.Next(1, enumeration.Items.Count);
+            int randomIndex = TemplatesHelper.Random.Next(1, enumeration.Items.Count) - 1;
 
             return enumeration.Items[randomIndex];
         }
